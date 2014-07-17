@@ -18,12 +18,16 @@ public class Magasin {
     	
     	// initialiser la stratégie de tarification
     	System.setProperty("strategietarification.class.name", "ventes.tarification.StratégiePourcentageRemise");
-    	System.setProperty("strategietarification.class.percentage", "90");
+    	System.setProperty("strategietarification.class.percentage", "90");  // 90% est un rabais de 10%
     	
     	// simuler un cas d'utilisation (DSS)
     	r.créerNouvelleVente();
-    	r.saisirArticle(200, 1);
+    	r.saisirArticle(101, 1);
     	r.saisirArticle(100, 2);
+    	r.saisirArticle(102, 4);
+    	r.saisirArticle(103, 1);
+    	r.saisirArticle(105, 6);
+    	r.saisirArticle(104, 1);
     	r.terminerVente();
     	r.créerPaiement(100);
     }
