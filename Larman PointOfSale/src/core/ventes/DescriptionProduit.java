@@ -1,4 +1,4 @@
-package ventes;
+package core.ventes;
 
 public class DescriptionProduit {
 	private CodeArticle code;

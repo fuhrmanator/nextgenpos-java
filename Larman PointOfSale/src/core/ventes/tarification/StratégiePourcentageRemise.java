@@ -1,7 +1,7 @@
-package ventes.tarification;
+package core.ventes.tarification;
 
-import ventes.Monnaie;
-import ventes.Vente;
+import core.ventes.Monnaie;
+import core.ventes.Vente;
 
 // visibilité package (pas public) pour cacher l'implémentation
 class StratégiePourcentageRemise implements IStratégieTarification {

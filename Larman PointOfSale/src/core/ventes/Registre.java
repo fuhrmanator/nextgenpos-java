@@ -1,4 +1,4 @@
-package ventes;
+package core.ventes;
 
 public class Registre {
 	private Vente venteEnCours;
@@ -13,12 +13,10 @@ public class Registre {
 		System.out.println("Nouvelle vente");
 	}
 	
-	public void saisirArticle(int codeInt, int quantité) {
-		// opération système contient des types primitifs, donc faut convertir le code
-		CodeArticle code = new CodeArticle(codeInt);
-		DescriptionProduit dp = catalogueProduits.getDescriptionProduit(code);
+	public void saisirArticle(CodeArticle id, int quantité) {
+		DescriptionProduit dp = catalogueProduits.getDescriptionProduit(id);
 		if (dp == null) {
-			System.out.println("Aucun produit correspondant au code : " + code);
+			System.out.println("Aucun produit correspondant au code : " + id);
 		} else {
 			venteEnCours.créerLigneArticles(dp, quantité);
 			System.out.println("saisirArticle: " + dp.getDescription() + " (@" + dp.getPrix() + "), quantité = " + quantité + " [sous total: "+ venteEnCours.getTotalAvantRemise() + "]" );

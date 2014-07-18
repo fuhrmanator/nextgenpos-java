@@ -1,4 +1,4 @@
-package ventes.tarification;
+package core.ventes.tarification;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -20,6 +20,10 @@ public class FabriqueStratégieTarification {
 	}
 	
 	public IStratégieTarification getStratégieTarification() {
+		/*
+		 * Façon dynamique d'obtenir la config des stratégies. C'est rudimentaire.
+		 * Idéalement il y aurait un moyen de savoir quels sont les arguments pour les stratégies.
+		 */
 		String nomClasse = System
 				.getProperty("strategietarification.class.name");
 		IStratégieTarification stratégie = null;

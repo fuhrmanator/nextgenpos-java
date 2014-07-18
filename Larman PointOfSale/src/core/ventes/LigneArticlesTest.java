@@ -1,4 +1,4 @@
-package ventes;
+package core.ventes;
 
 import static org.junit.Assert.*;
 

@@ -1,4 +1,4 @@
-package ventes;
+package core.ventes;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

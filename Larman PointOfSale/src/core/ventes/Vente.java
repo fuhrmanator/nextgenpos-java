@@ -1,18 +1,18 @@
-package ventes;
+package core.ventes;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import ventes.tarification.IStratégieTarification;
+import core.ventes.tarification.IStratégieTarification;
 
 public class Vente {
 	private List<LigneArticles> lignesArticles = new ArrayList<LigneArticles>();
 	private Date date = new Date();
 	private boolean estTerminee = false;
 	private Paiement paiement;
-	private IStratégieTarification tarificationStratégie = ventes.tarification.FabriqueStratégieTarification
+	private IStratégieTarification tarificationStratégie = core.ventes.tarification.FabriqueStratégieTarification
 			.getInstance().getStratégieTarification();
 
 

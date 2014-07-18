@@ -1,4 +1,4 @@
-package ventes;
+package core.ventes;
 
 public class LigneArticles {
 	private int quantite;

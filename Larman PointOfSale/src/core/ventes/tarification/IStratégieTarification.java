@@ -1,7 +1,7 @@
-package ventes.tarification;
+package core.ventes.tarification;
 
-import ventes.Monnaie;
-import ventes.Vente;
+import core.ventes.Monnaie;
+import core.ventes.Vente;
 
 public interface IStratégieTarification {
 	

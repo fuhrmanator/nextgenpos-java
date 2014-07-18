@@ -1,4 +1,4 @@
-package ventes;
+package core.ventes;
 
 import java.util.HashMap;
 import java.util.Map;
