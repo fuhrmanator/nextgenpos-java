@@ -1,18 +1,27 @@
 package core.ventes;
 
-public class CodeArticle {
+import javax.persistence.AttributeConverter;
+import javax.persistence.Converter;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+public class CodeArticle {
 	private int code;
+
+	public CodeArticle() {
+		// needed by JPA
+	}
 
 	public CodeArticle(int code) {
 		this.code = code;
 	}
 
 	public String toString() {
-		return Integer.toString(code);
+		return "CodeArticle:" + Integer.toString(code);
 	}
 
-	// Puisque CodeArticle est utilisé comme clé dans les Map, faut redéfinir des méthodes
+	// Puisque CodeArticle est utilisé comme clé dans les Map, faut redéfinir
+	// des méthodes
 	public int hashCode() {
 		return code;
 	}
@@ -26,4 +35,9 @@ public class CodeArticle {
 		CodeArticle rhs = (CodeArticle) obj;
 		return rhs.code == this.code;
 	}
+
+	public int getCode() {
+		return code;
+	}
+
 }
