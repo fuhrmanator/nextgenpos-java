@@ -31,7 +31,7 @@ public class Magasin {
            public void run()
            {
         	  JFrame frame = new JFrameTraitementVente(r);
-              frame.setSize(300, 300); 
+              //frame.setSize(300, 300); 
               frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
               frame.setVisible(true);
            }
