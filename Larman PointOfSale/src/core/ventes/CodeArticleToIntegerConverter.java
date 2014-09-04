@@ -9,12 +9,10 @@ import javax.persistence.Converter;
 public class CodeArticleToIntegerConverter implements
 		AttributeConverter<CodeArticle, Integer> {
 
-	@Override
 	public Integer convertToDatabaseColumn(CodeArticle attribute) {
 		return (attribute == null) ? null : attribute.getCode();
 	}
 
-	@Override
 	public CodeArticle convertToEntityAttribute(Integer dbData) {
 		return (dbData == null) ? null : new CodeArticle(dbData);
 	}

@@ -95,12 +95,10 @@ public class Monnaie {
 	public class MonnaieToStringConverter implements
 			AttributeConverter<Monnaie, String> {
 
-		@Override
 		public String convertToDatabaseColumn(Monnaie attribute) {
 			return (attribute == null) ? null : attribute.toDbString();
 		}
 
-		@Override
 		public Monnaie convertToEntityAttribute(String dbData) {
 			return (dbData == null) ? null
 					: new Monnaie(Double.parseDouble(dbData));
