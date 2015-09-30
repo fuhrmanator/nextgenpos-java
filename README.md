@@ -1,4 +1,4 @@
-This code is used in the context of my software design courses at ETSMTL.ca. The design is based on the case study presented in [Applying UML and Patterns](http://amzn.com/0131489062) by Craig Larman.
+This code is used in the context of my software design courses at ETSMTL.ca. The design is based on the case study presented in the book [Applying UML and Patterns](http://amzn.com/0131489062) by Craig Larman.
 
 [![](http://www.etsmtl.ca/ETS/media/Prive/logo/ETS-web-rouge-devise.jpg)](http://www.etsmtl.ca)
 
@@ -35,3 +35,4 @@ Total avec remise : 11.61(CD)
 ---
 
 <img src='http://ecx.images-amazon.com/images/I/71G5XtzzfhL._AA1500_.jpg' height='280'> <img src='http://ecx.images-amazon.com/images/I/51aikMfx9RL.jpg' height='300'>
+
